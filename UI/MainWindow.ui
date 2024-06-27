@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    font-family: 'Roboto', sans-serif;
+    background-color: #2C2C2C;
+    color: #FFFFFF;
+}
+
+QPushButton {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+
+QPushButton.primary {
+    background-color: #007BFF;
+}
+
+QPushButton:hover {
+    background-color: #0056b3;
+}
+
+
+QLineEdit, QTextEdit, QDoubleSpinBox,QSpinBox {
+    border: 1px solid #555555;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #3C3C3C;
+    color: #FFFFFF;
+}
+
+QLineEdit:focus, QTextEdit:focus, QDoubleSpinBox:focus,QSpinBox:focus {
+    border-color: #007BFF;
+}
+
+QDoubleSpinBox::up-button, QDoubleSpinBox::down-button,QSpinBox::up-button,QSpinBox::down-button {
+    background-color: #2C2C2C;
+    border: 1px solid #555555;
+    width: 16px;
+    height: 16px;
+}
+
+QDoubleSpinBox::up-arrow, QDoubleSpinBox::down-arrow,QSpinBox::up-arrow, QSpinBox:down-arrow {
+    color: #FFFFFF;
+}
+
+QTableWidget {
+    background-color: #3C3C3C;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    gridline-color: #555555;
+    color: #FFFFFF;
+}
+QHeaderView::section {
+    background-color: #4C4C4C;
+    color: #FFFFFF;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #555555;
+}
+
+QTableWidget::item {
+    padding: 8px;
+    border-bottom: 1px solid #555555;
+}
+
+QTableWidget::item:nth-child(even) {
+    background-color: #2C2C2C;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,2">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QFormLayout" name="formLayout">
+          <item row="1" column="0">
+           <widget class="QLabel" name="abel">
+            <property name="text">
+             <string>Name</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="mwname"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>Phone</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="mwphone"/>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>email</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="mwemail"/>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>addreset</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QTextEdit" name="mwaddrest"/>
+          </item>
+          <item row="5" column="1">
+           <widget class="QPushButton" name="newcustomerbtn">
+            <property name="text">
+             <string>New Customer</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>ID</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="mwshowid">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QFormLayout" name="formLayout_2">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>Product Name</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="mwproductname"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>Price</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QDoubleSpinBox" name="mwproductprice">
+            <property name="maximum">
+             <double>9000000000000000.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>Quantity</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QSpinBox" name="mvproductproductquantity">
+            <property name="minimum">
+             <number>1</number>
+            </property>
+            <property name="maximum">
+             <number>100000</number>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_8">
+            <property name="text">
+             <string>Discount</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QDoubleSpinBox" name="mwproductdiscount">
+            <property name="maximum">
+             <double>100.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="label_9">
+            <property name="text">
+             <string>Total</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QLineEdit" name="mvproducttotal">
+            <property name="inputMethodHints">
+             <set>Qt::ImhDigitsOnly</set>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="1">
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QPushButton" name="pushButton_2">
+              <property name="text">
+               <string>Clear</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="mwaddtobill">
+              <property name="text">
+               <string>Add To Bill</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="8" column="1">
+           <widget class="QPushButton" name="newproduactbtn">
+            <property name="text">
+             <string>Add New Produact</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QTableWidget" name="tableWidget">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+            <attribute name="horizontalHeaderDefaultSectionSize">
+             <number>150</number>
+            </attribute>
+            <column>
+             <property name="text">
+              <string>Item</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Discount</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Price</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Total</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QPushButton" name="newrepaymentbtn">
+              <property name="text">
+               <string>Print Bill</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="mwsavevbill">
+              <property name="text">
+               <string>Save Bill</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_10">
+              <property name="text">
+               <string>Total</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="total_sum">
+              <property name="text">
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>mwname</tabstop>
+  <tabstop>mwphone</tabstop>
+  <tabstop>mwproductname</tabstop>
+  <tabstop>mwproductprice</tabstop>
+  <tabstop>mvproductproductquantity</tabstop>
+  <tabstop>mwproductdiscount</tabstop>
+  <tabstop>mwaddtobill</tabstop>
+  <tabstop>newrepaymentbtn</tabstop>
+  <tabstop>mwsavevbill</tabstop>
+  <tabstop>pushButton_2</tabstop>
+  <tabstop>newproduactbtn</tabstop>
+  <tabstop>mwaddrest</tabstop>
+  <tabstop>tableWidget</tabstop>
+  <tabstop>newcustomerbtn</tabstop>
+  <tabstop>mvproducttotal</tabstop>
+  <tabstop>mwemail</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
